@@ -35,7 +35,7 @@ gulp.task("browser-sync", () => {
 
 gulp.task("html", () => {
   return gulp
-    .src(["!src/components/**/*.*", "src/**/*.html"], {
+    .src(["src/**/*.html", "!src/components/**/*.*"], {
       cwd: ""
     })
     .pipe(plumber())
